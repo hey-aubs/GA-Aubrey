@@ -32,16 +32,55 @@ a {
 /* Core Styles */
 .relaxr-corestyles p {
   font-weight: normal;
+  font-size: 26px;
 }
 
+.relaxr-corestyles h1, h2, h3, h4, h5, h6 {
+  color: #033048;
+  font-weight: 600;
+  margin-top: 16px;
+}
 
+.relaxr-corestyles h1{
+  font-size: 40px;
+}
+.relaxr-corestyles h2{
+  font-size: 32px;
+}
+.relaxr-corestyles h3{
+  font-size: 26px;
+}
+.relaxr-corestyles h4{
+  font-size: 20px;
+}
+.relaxr-corestyles h5{
+  font-size: 18px;
+}
+.relaxr-corestyles h6{
+  font-size: 16px;
+}
+.relaxr-corestyles p.featuredText{
+  font-size: 30px;
+  font-style: italic;
+}
+.relaxr-corestyles strong{
+  font-weight: bold;
+}
+.relaxr-corestyles p.featuredText em{
+  font-style: normal;
+}
 
+.relaxr-corestyles ul, 
+.relaxr-corestyles ol{
+  margin: 30px 0 30px 80px;
+}
 
-
-
-
-
-
+.relaxr-corestyles ul ul,
+.relaxr-corestyles ul ol,
+.relaxr-corestyles ol ol,
+.relaxr-corestyles ol ul{
+  margin: 12px 0 12px 40px;
+}
 
 /* Footer */
 .pageFooter {
