@@ -1,6 +1,4 @@
-/* ################################################## */
-/* ########### Global classes / overrides ########### */
-/* ################################################## */
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -22,5 +20,90 @@ p {
 /* Light gray: #adadad */
 /* Medium gray: #878787 */
 
-/* Background Image */
-/* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+.siteFooter, .siteMain {
+  gap: 10px;
+}
+/* Header & Nav Styling */
+  .siteHeader {
+    display: flex;
+    background: black;
+    justify-content: right;
+    align-items: center;
+  }
+
+    .siteHeaderLogo {
+      width: 200px;
+      height: 80px;
+      margin-left: 20px;
+      color: f2ff00;
+      display: flex;
+      align-items: center;
+    }
+
+    .siteHeaderNav {
+    width: 100%;
+    margin-left: 50px;
+    color: white;
+    }
+
+        .siteHeaderNav ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        float: right;
+        margin-right: 20px;
+        }
+
+        .siteHeaderNav ul li {
+          display; block;
+  }
+
+  /* Top Banner Styling */
+.siteBanner{
+  background: #adadad;
+  text-align: center;
+}
+
+  /* Hero Styling */
+.siteMainHero {
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 75%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+  .heroTextbox{
+    background: white;
+    opacity: 90%;
+    width: 35%;
+    text-align: center;
+    padding: 40px;
+    float: right;
+  }
+
+  /* 3-Across Promo Styling */
+
+.siteAdditionalFeatures {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.siteAdditionalFeatures .siteMarketingFeature {
+  width: 33%;
+  margin: 30px 20px 30px 20px;
+}
+
+.siteAdditionalFeatures .siteMarketingFeature:first-child {
+}
+
+  /* Site Footer Styling */
+.siteFooter{
+  padding: 10px;
+  background: black;
+  color: white;
+}

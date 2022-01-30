@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     flex:320px;
-    background: red;
 }
 
 .exerciseHeaderLogo {
@@ -34,7 +33,7 @@
 }
 
 .exerciseHeaderNav ul li {
-    min-width: 150px;
+    min-width: 100px;
     margin: 0 10px 10px 0;
     flex:1;
 }
@@ -70,10 +69,19 @@
     flex: 100%;
 }
 
-.exerciseMainContentSubBanner {
-    flex: 75%;
+.exerciseMainContentSub {
+    display: flex;
+    flex: 100%;
+    gap: 10px;
 }
 
+.exerciseMainContentSubBanner1 {
+    flex:20%;
+}
+.exerciseMainContentSubBanner2 {
+    flex:10%;
+}
 .exerciseMainContentBlock {
-    flex: 25%;
+    display:flex;
+    flex: 20%;
 }
