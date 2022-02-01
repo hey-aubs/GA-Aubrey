@@ -1,3 +1,10 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -9,101 +16,150 @@ p {
   padding: 15px 0;
 }
 
-/* Fonts, classes are so I can reuse the styles on a variety of elements */
-.merriweather { font-family: 'Merriweather', serif; }
-      .oswald { font-family: 'Oswald', sans-serif; }
-        .lato { font-family: 'Lato', sans-serif; }
-
-/* Colors */
-/* Dark yellow: #f2ff00 */
-/* Lighter yellow: #ffd900 */
-/* Light gray: #adadad */
-/* Medium gray: #878787 */
-
-.siteFooter, .siteMain {
-  gap: 10px;
+a {
+      font-family: 'Oswald', sans-serif;
+      text-decoration: none;
+      color: white;
 }
-/* Header & Nav Styling */
-  .siteHeader {
-    display: flex;
-    background: black;
-    justify-content: right;
-    align-items: center;
-  }
 
-    .siteHeaderLogo {
-      width: 200px;
-      height: 80px;
-      margin-left: 20px;
-      color: f2ff00;
-      display: flex;
-      align-items: center;
+/* CTA button */
+    .button a {
+      font-size: 16px;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #f2ff00;
+      padding: 10px;
+      display: inline-block;
+      border: none;
+      text-align: center;
+      width: 100%;
+    }
+   .button a:hover {
+          background: black;
+          color: white;
     }
 
-    .siteHeaderNav {
-    width: 100%;
-    margin-left: 50px;
-    color: white;
-    }
+/* ############################## */
+/* ########### Header ########### */
+/* ############################## */
+.siteHeader {
+display: flex;
+background: black;
+padding: 10px 30px;
+justify-content: space-between;
+align-items: center;
+}
+/* Logo */
+.siteHeaderLogo {
+width: 400px;
+height: 100%;
+margin-left: 20px;
+color: f2ff00;
+display: flex;
+align-items: center;
+}
+.siteHeaderLogo a {
+color: #f2ff00;
+font-family: Merriweather;
+font-size: 20px;
+text-decoration: none;
+}      
+/* Navigation */
+.siteHeaderNav {
+width: 100%;
+margin-left: 50px;
+ color: white;
+}
+.siteHeaderNav a:hover{
+text-decoration: underline;
+}
+.siteHeaderNav ul {
+display: flex;
+gap: 10px;
+list-style-type: none;
+float: right;
+margin-right: 20px;
+}
+.siteHeaderNav ul li {
+display; block;
+}
 
-        .siteHeaderNav ul {
-        display: flex;
-        gap: 10px;
-        list-style-type: none;
-        float: right;
-        margin-right: 20px;
-        }
-
-        .siteHeaderNav ul li {
-          display; block;
-  }
-
-  /* Top Banner Styling */
+/* ############################## */
+/* ########### Banner ########### */
+/* ############################## */
 .siteBanner{
-  background: #adadad;
-  text-align: center;
+background: #adadad;
+text-align: center;
+border-bottom: 5px solid #f2ff00;
+}
+.siteBanner p{
+ margin: 0px;
+font-style: bolder;
+font-size: 20px;
+}
+.siteBanner span.underline{
+text-decoration:underline;
+text-decoration-color: yellow;
+}
+.siteBanner span.strikeout{
+text-decoration: line-through; 
 }
 
-  /* Hero Styling */
+/* ############################## */
+/* ############ Hero ############ */
+/* ############################## */
 .siteMainHero {
-  display:flex;
-  justify-content: right;
-  align-items: center;
-  margin-bottom: 10px;
-  height: 75%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+display:flex;
+justify-content: right;
+align-items: center;
+margin-bottom: 10px;
+height: 75%;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+ /* Hero Textbox Styling */
+.heroTextbox{
+background: white;
+opacity: 90%;
+ width: 30%;
+text-align: left;
+padding: 40px;
+float: right;
+margin-right: 10px;
 }
 
-  .heroTextbox{
-    background: white;
-    opacity: 90%;
-    width: 35%;
-    text-align: center;
-    padding: 40px;
-    float: right;
-  }
-
-  /* 3-Across Promo Styling */
-
-.siteAdditionalFeatures {
-  display: flex;
-  width: 100%;
-  gap: 10px;
+/* ############################## */
+/* ########## Promolist ########## */
+/* ############################## */
+.sitePromoList {
+display: flex;
+justify-content: center;
 }
 
-.siteAdditionalFeatures .siteMarketingFeature {
-  width: 33%;
-  margin: 30px 20px 30px 20px;
+/* Promo (individual) */      
+.sitePromo {
+border-right: 1px solid lightgray;
+margin: 10px 0;
+}
+  
+.sitePromo:last-child {
+ border-right: none;
 }
 
-.siteAdditionalFeatures .siteMarketingFeature:first-child {
+/* Promo CTA Button Styling */
+.sitePromoList .sitePromo a {
+background: #adadad;
+ width: 95%;
 }
 
-  /* Site Footer Styling */
-.siteFooter{
-  padding: 10px;
-  background: black;
-  color: white;
+/* ############################## */
+/* ########### Footer ########### */
+/* ############################## */
+
+.siteFooter {
+padding: 10px;
+background: black;
+color: white;
 }
