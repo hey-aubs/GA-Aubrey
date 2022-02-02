@@ -49,12 +49,12 @@ a {
 .outer-container {
   width: 960px;
   margin: 0 auto;
+  display: flex;
 }
 
 .primaryArticle {
   width: 640px;
   float: left;
-  margin-right: 20px;
   overflow:hidden;
 }
 
@@ -65,7 +65,7 @@ a {
   background: rgb(230,230,230);
   border: 1px solid rgb(155,155,155);
   overflow:hidden;
-
+  height: fit-content;
 }
 
 
@@ -76,14 +76,14 @@ a {
 
 .oldTimeNewsPaper-corestyles p {
   font-size: 20px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .oldTimeNewsPaper-corestyles blockquote {
   font-size: 20px;
   margin-bottom: 20px;
   font-style: italic;
-  margin-left: 30px;
+  padding-left: 30px;
   border-left: 8px solid black;
 }
 
@@ -170,9 +170,9 @@ a {
 }
 
 .oldTimeNewsPaper-corestyles-contentImage {
-  width: 100%;
+  max-width: 100%;
   border: 1px solid rgb(155,155,155);
-  margin: 16px auto;
+  margin: 16px auto 16px auto;
   display:block;
 }
 

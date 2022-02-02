@@ -1,16 +1,16 @@
 
 .exerciseHeader, .exerciseFooter, .exerciseMain {
-    margin: 0 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .exerciseMainFeatures {
-
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .exerciseMainFeatures .exerciseMarketingFeature {
-
-
+margin-bottom: 10px;
 }
 
 .exerciseMainFeatures .exerciseMarketingFeature:first-child {
@@ -18,14 +18,15 @@
 }
 
 .exerciseAdditionalFeatures {
-
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 10px;
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature {
-
+    background-color: purple;
 
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature:first-child {
-
 }

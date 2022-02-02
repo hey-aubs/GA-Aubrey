@@ -1,61 +1,66 @@
 
-.exerciseFooter, .exerciseMain {
-    margin: 0 10px 10px 10px;
+.exerciseFooter, .exerciseMain, .exerciseHeader {
+    margin: 10px 10px 10px 10px;
 }
 
 .exerciseHeader {
-
-
+    margin: 10px;
+    display:grid;
+    grid-template-columns: 320px auto;
+    align-items: center;
 }
 
+/* A */
 .exerciseHeaderLogo {
     width: 200px;
     height: 80px;
-
+    min-width: 200px;
+    margin-right:100px;
+    margin-bottom: 10px;
 }
 
-.exerciseHeaderNav {
-
-}
-
+/* B1-B4 */
 .exerciseHeaderNav ul {
-
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
 
 .exerciseHeaderNav ul li {
-
-
+    list-style: none;
 }
 
-
-/* Main */
-
+/* Main - C, D, E, F, G1-G3*/
 .exerciseMain {
-
+    display:grid;
+    grid-template-columns: 25% 75%;
+    gap:10px;
 }
 
+/* C */
 .exerciseMainLeftNav {
-
-
 }
 
+/* D, E, F, G1-G3 */
 .exerciseMainContent {
+    overflow:hidden;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    gap:10px;
+    margin-right:10px;}
 
-
-}
-
-.exerciseMainContent > * {
-    margin: 0;
-}
-
+/* D */
 .exerciseMainContentBanner {
-
+    grid-column:span 4;
 }
 
+/* E */
 .exerciseMainContentSubBanner {
-
+    grid-column:span 3;
 }
 
+/* G 1-3 */
 .exerciseMainContentBlock {
-
 }
