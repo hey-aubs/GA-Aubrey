@@ -1,9 +1,22 @@
-/* ############################## */
 /* ######### Overrides ########## */
-/* ############################## */
 html, body {
     height: 100%;
     font-family: 'Lato', sans-serif;
+  }
+
+h1, h2, p {
+  color: #3b4144
+}
+h1 {
+    font-size: 18px;
+  }
+  
+h2 {
+    font-size: 16px;
+  }
+
+  p {
+   font-size: 14px;
   }
 
 li {
@@ -12,23 +25,18 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
-  a:hover{
+.real-estate-insights a,
+.results-pagination a {
+color: #20c063; 
+}
+  a:hover {
     color: black;
   }
   
-  h1 {
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  
-  p {
-    font-size: 14px;
-  }
-/* ############################## */
 /* ############ Nav ############# */
-/* ############################## */
 .siteHeader {
     background-color: #20c063;
     color: white;
@@ -77,49 +85,160 @@ a {
     width: 22px;
   }
   
-/* ############################## */
-/* ######### Breadcrumbs ######## */
-/* ############################## */
-
-.breadcrumbs {
+/* ########## Search Results ########## */
+.results {
   display: flex;
   justify-content: flex-start;
 }
 
-.breadcrumbs li{
+.results li{
   padding-left: 15px;
   display: inline-block;
 }
 
-/* ############################## */
-/* ######## Trulia Grid ######### */
-/* ############################## */
-.trulia-grid {
+/* ########## Results Grid ########## */
+.results-grid {
   display: grid;
-  grid-template-columns: 1 fr 1 fr 1 fr;
-  gap: 20px;
-  padding: ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 15px;
   text-align: left;
+  background-color: #e8e9ea;
 }
-.trulia-house-image {
 
+.grid-card {
+  border: 1px solid #dbdbdb;
+  background-color: white;
 }
+
+.trulia-house-price {
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  font-size: 16px;
+}
+.arrow-icon {
+  height: 15px;
+  padding: 3px 0px 0px 0px;
+  float:inline-end;
+}
+
+.trulia-house-stats li {
+  display: flex;
+  flex-direction: row;
+}
+
+.trulia-house-address {
+  color: #787d81;
+  font-style: normal;
+}
+
 .trulia-house-beds,
 .trulia-house-baths {
-  height: 15px;
-  width: 15px;
   vertical-align: middle;
+  mix-blend-mode: multiply;
+  float: left;
+  margin-right: 20px;
+}
+.trulia-article-icon {
+  height: 15px;
+  padding: 0px 3px 0px 0px;
 }
 
+.grid-card-image {
+  background-repeat:no-repeat;
+  background-size: cover;
+  min-height: 250px;
+  background-color: #0e0f0f;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  display:flex;
+  flex-direction:column;
+}
+    .trulia-house-image-1 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg)
+      }
+    .trulia-house-image-2 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg)
+      }
+    .trulia-house-image-3 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg)
+      }
+    .trulia-house-image-4 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg)
+      }
+    .trulia-house-image-5 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg)
+      }
+    .trulia-house-image-6 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg)
+      }
+    .trulia-house-image-7 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg)
+      }
+      .trulia-house-image-8 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg)
+      }
+    .trulia-house-image-9 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg)
+      }
+    .trulia-house-image-10 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg)
+      }
+    .trulia-house-image-11 {
+     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg)
+    }
+    .trulia-house-image-12 {
+      background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg)
+      }
 
-/* ############################## */
 /* ######### Pagination ######### */
-/* ############################## */
+.results-pagination {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-/* ############################## */
+.pagination-ui {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.breadcrumbs-ui {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 /* ######### Insights ########### */
-/* ############################## */
+.real-estate-insights {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 30px 30px;
+  width: 90%;
+}
 
-/* ############################## */
-/* ########## Footer ############ */
-/* ############################## */
+/* ########## Footer ########## */
+.site-footer {
+  background-color: #474E52;
+  color: #b1b6bb;
+  padding:10px;
+}
+
+.footer-links {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  justify-content: center;
+}
+
+.copyright-text {
+  font-size: 10px;
+  text-align:center;
+}
