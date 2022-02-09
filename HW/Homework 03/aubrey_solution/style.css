@@ -7,6 +7,7 @@ html, body {
 h1, h2, p {
   color: #3b4144
 }
+
 h1 {
     font-size: 18px;
   }
@@ -20,6 +21,11 @@ h2 {
   }
 
 li {
+  list-style: none;
+}
+
+ul {
+  padding: 5px;
   list-style: none;
 }
 
@@ -40,14 +46,10 @@ color: #20c063;
 .siteHeader {
     background-color: #20c063;
     color: white;
+    height: 50px;
     align-items: center;
     display: flex;
     justify-content: space-between;
-}
-
-.siteHeader ul {
-  list-style: none;
-  padding: 0;
 }
 
 .siteHeader ul li{
@@ -84,16 +86,18 @@ color: #20c063;
     text-transform: uppercase;
     width: 22px;
   }
-  
+    .circleLink:hover{
+      border: 2px solid black;
+    }
+
 /* ########## Search Results ########## */
 .results {
   display: flex;
-  justify-content: flex-start;
 }
 
 .results li{
-  padding-left: 15px;
   display: inline-block;
+  padding-right: 20px;
 }
 
 /* ########## Results Grid ########## */
@@ -107,15 +111,25 @@ color: #20c063;
 }
 
 .grid-card {
-  border: 1px solid #dbdbdb;
   background-color: white;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .trulia-house-price {
   margin: 0px;
-  padding: 5px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   font-size: 16px;
+  font-weight: 600;
 }
+
+.trulia-house-facts {
+  margin: 10px;
+  padding: 0px;
+}
+
+
 .arrow-icon {
   height: 15px;
   padding: 3px 0px 0px 0px;
@@ -139,6 +153,33 @@ color: #20c063;
   float: left;
   margin-right: 20px;
 }
+.new-box {
+  float: left;
+  background-color: #20c063;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: 50px;
+  padding: 3px 3px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 150px;
+}
+
+.by-owner-box {
+  float: left;
+  background-color: rgba(134, 144, 152, 0.45);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  width: 110px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 150px;
+}
+
 .trulia-article-icon {
   height: 15px;
   padding: 0px 3px 0px 0px;
@@ -147,13 +188,13 @@ color: #20c063;
 .grid-card-image {
   background-repeat:no-repeat;
   background-size: cover;
-  min-height: 250px;
-  background-color: #0e0f0f;
-  color: white;
-  text-align: center;
+  min-height: 200px;
   justify-content: center;
   display:flex;
   flex-direction:column;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
     .trulia-house-image-1 {
       background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg)
@@ -204,12 +245,16 @@ color: #20c063;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .breadcrumbs-ui {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* ######### Insights ########### */
@@ -241,4 +286,5 @@ color: #20c063;
 .copyright-text {
   font-size: 10px;
   text-align:center;
+  color: white;
 }
