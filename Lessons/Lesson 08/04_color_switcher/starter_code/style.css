@@ -29,9 +29,14 @@ p {
   border: 3px solid black;
 }
 
-#grayButton {
-  background: gray;
+#greyButton {
+  background: grey;
 }
 #whiteButton {
   background: white;
+}
+
+.greyMode {
+  background: rgb(70, 70, 70);
+  color: white;
 }
