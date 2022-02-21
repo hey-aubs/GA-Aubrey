@@ -115,7 +115,17 @@ a {
     overflow: hidden;
 }
 
-
+/* * The member companies should be displayed 2-across at desktop sizes and 1-across on tablet sizes and smaller (768px) */
+@media screen and (min-width: 769px){
+    .responsiveTileGroup{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .responsiveTileGroupItem {
+        width: 50%;
+    }
+}
 
 
 .copyright {
