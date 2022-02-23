@@ -15,7 +15,9 @@
 }
 
 .pbeTopHeaderSiteLogo {
+    max-width: 70px;
     margin: 10px 20px 10px 0;
+
 }
 
 .pbeTopHeaderSiteNavigation {

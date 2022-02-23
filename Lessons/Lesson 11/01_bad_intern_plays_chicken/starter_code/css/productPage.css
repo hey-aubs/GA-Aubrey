@@ -11,6 +11,15 @@
     #pbeProductPageTitle {
         order:1;
     }
+    #pbeProductDesc {
+        order:3;
+    }
+    #pbeProductPagePurchase {
+        order:2;
+    }
+    #pbeProductPageUpsell {
+        order:4;
+    }
 }
 
 /* Notices */
@@ -86,7 +95,7 @@
 .pdeChickenDataPricingTable {
     width:100%;
     margin: 1rem 0;
-    text-align: left;
+    text-align: center;
     border: 1px solid #332A10;
 }
 
@@ -130,7 +139,7 @@
 
 .pbePurchaseForm input[type=submit] {
     background: #22495E;
-    color: goldenrod;
+    color: white;
     padding: 10px;
     text-transform: uppercase;
     display:block;
@@ -166,9 +175,9 @@
 }
 
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     .pbeCrossSell > li {
-        grid-column:span 4;
+        grid-column:span 2;
     }
 }
 
@@ -202,5 +211,6 @@
 }
 
 .pbeChickenBreedBlock h1 > a {
+    text-decoration:none;
     color:#332A10;
 }
