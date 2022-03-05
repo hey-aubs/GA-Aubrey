@@ -1,9 +1,56 @@
 /* Featured and Expanded Item */
 
+/* There should be an animation for the transition (suggest making it short, such as 0.15s, and use an easing function) */
 .trulia-grid-item {
-
+    transition: 0.15s ease-in;
+   /* The user should have a visual queue that they can click on an trulia-grid-item. */
+    cursor: pointer;
 }
 
 .trulia-featured-grid-item {
-
+    grid-column:span 2;
+    grid-row:span 2;
+    height:100%;
+    min-height:350px;
 }
+
+.trulia-featured-grid-item .trulia-house-image {
+    height:85%;
+}
+
+.trulia-featured-grid-item .trulia-house-facts {
+    padding: 0px 10px 0px 10px;
+    height:20%;
+    min-height:160px;
+    gap: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+  .trulia-featured-grid-item .trulia-house-address {
+    color:rgb(55,55,55);
+    flex: 3;
+    font-size: 20px;
+  }
+    
+  .trulia-featured-grid-item .trulia-house-price {
+    min-width:300px;
+    flex: 1;
+  }
+
+  .trulia-featured-grid-item .trulia-house-price h1 {
+      font-size: 30px;
+  }
+
+  .trulia-featured-grid-item .trulia-house-stats {
+      flex: 1;
+      font-size: 16px;
+      font-weight: bold;
+  }
+
+  .trulia-featured-grid-item .trulia-article-icon {
+    height: 25px;
+    padding: 0px 3px 0px 0px;
+  }

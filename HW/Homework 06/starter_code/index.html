@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Homework 6 - Solution Code</title>
+    <title>[starter] Homework 6 - Solution Code</title>
+     <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./base-style.css">
     <link rel="stylesheet" href="./interactive-style.css">
-
 </head>
 
 <body>
+
+<!-- Top Nav -->
 <header class="trulia-nav">
     <nav class="trulia-nav-left">
         <a href="#"  class="trulia-nav-item">
@@ -35,6 +39,7 @@
     </nav>
 </header>
 
+<!-- Breadcrumbs -->
 <section class="trulia-breadcrumb-container">
     <div class="trulia-breadcrumb-text">
         <h1>Homes For Sale & Real Estate in 20010</h1>
@@ -42,9 +47,9 @@
     </div>
 </section>
 
+<!-- Housing Grid -->
 <main class="trulia-grid">
-
-    <!-- Example grid-item -->
+    <!-- House 01 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-1">
         </div>
@@ -71,6 +76,7 @@
         </ul>
     </article>
 
+    <!-- House 02: The Featured Item-->
     <article class="trulia-grid-item trulia-featured-grid-item">
         <div class="trulia-house-image trulia-house-image-2">
             <div class="new-box">New
@@ -100,6 +106,7 @@
         </ul>
     </article>
 
+    <!-- House 03 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-3">
         </div>
@@ -127,6 +134,7 @@
         </ul>
     </article>
 
+    <!-- House 04 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-4">
         </div>
@@ -153,6 +161,7 @@
         </ul>
     </article>
 
+    <!-- House 05 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-5">
         </div>
@@ -180,6 +189,7 @@
         </ul>
     </article>
 
+    <!-- House 06 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-6">
             <div class="new-box">New
@@ -209,6 +219,7 @@
         </ul>
     </article>
 
+    <!-- House 07 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-7">
         </div>
@@ -236,6 +247,7 @@
         </ul>
     </article>
 
+    <!-- House 08 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-8">
             <div class="by-owner-box">For sale by owner
@@ -265,6 +277,7 @@
         </ul>
     </article>
 
+    <!-- House 09 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-9">
         </div>
@@ -292,6 +305,7 @@
         </ul>
     </article>
 
+    <!-- House 10 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-10">
         </div>
@@ -319,6 +333,7 @@
         </ul>
     </article>
 
+    <!-- House 11 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-11">
         </div>
@@ -346,6 +361,7 @@
         </ul>
     </article>
 
+    <!-- House 12 -->
     <article class="trulia-grid-item">
         <div class="trulia-house-image trulia-house-image-12">
         </div>
@@ -375,6 +391,7 @@
 
 </main>
 
+<!-- Pagination -->
 <section class="results-navigation">
     <ul class="page-ui">
         <li><a href="#">1</a></li>
@@ -396,6 +413,7 @@
     </ul>
 </section>
 
+<!-- Insights -->
 <section class="real-estate-insights">
     <h2>20010 Real Estate Insights</h2>
     <p>Zipcode 20010 is located in Washington, District of Columbia.</p>
@@ -414,6 +432,7 @@
             penthouse in this place</a> for an unparalleled experience.</p>
 </section>
 
+<!-- Footer -->
 <footer class="trulia-site-footer">
     <ul class="footer-links">
         <li><a href="#">About Trulia</a></li>
@@ -430,6 +449,9 @@
     <p class="copyright">Copyright © 2018 Trulia, LLC. All rights reserved. Equal Housing Opportunity.</p>
 </footer>
 
-<script src="js/trulia.js"></script>
+<!-- Javascript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="js/trulia.js"></script>
 </body>
 </html>

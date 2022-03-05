@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -15,8 +16,6 @@ html {
   font-size: 14px;
   line-height: 1.4;
   font-family: 'Source Sans Pro', sans-serif;
-
-
 }
 
 /*
@@ -111,9 +110,10 @@ a {
 
 /* Navigation */
 .trulia-nav {
-  background-color: #32b64c;
+  background-color: #20c063;
   color: white;
-  height: 40px;
+  height: 50px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -128,8 +128,6 @@ a {
   margin:0;
   overflow:hidden;
 }
-
-
 
 .trulia-nav svg {
   height: 25px;
@@ -171,7 +169,7 @@ a {
  * Some padding and margin tweaks give us a box we can round off border-radius
  * Notice border-radius is the same as the height/width of the inside of the box model
  */
-.trulia-nav-item .circleLink {
+ .trulia-nav-item .circleLink {
   border: 2px solid white;
   border-radius: 22px;
   display: inline-block;
@@ -182,6 +180,9 @@ a {
   text-transform: uppercase;
   width: 22px;
 }
+  .circleLink:hover{
+    border: 2px solid black;
+  }
 
 
 
@@ -659,4 +660,89 @@ a {
   h3 {
     page-break-after: avoid;
   }
+}
+
+/* The Grid: Responsive Issues */
+/* At sizes above 1600px, make it 6 across */
+@media screen and (min-width:1600px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* At sizes above 1200px, make it 4 across */
+@media screen and (min-width:1200px) and (max-width:1599px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* At less than 768px, make it 2 across */
+@media screen and (max-width:768px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* The Header*/
+/* The header should show a hamburger at 1024px and below */
+@media screen and (max-width:1024px){
+  .trulia-nav {
+    display: block;
+    height: auto;
+  }
+
+  .trulia-nav-toggle {
+    display:block;
+    color:white;
+    font-weight:bold;
+    font-size: 2rem;
+    margin-right:2rem;
+  }
+
+/* The navs should stack and display similar to the mock. */
+/* Clicking on the hamburger should allow the menu to open and close */
+
+.trulia-nav ul li {
+  display:inline-block;
+  margin:0;
+}
+
+.trulia-nav-logo {
+  height: 25px;
+  width: 78px;
+  padding-left:0;
+}
+
+.trulia-nav-left,
+.trulia-nav-right {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trulia-nav-left ul,
+.trulia-nav-right ul {
+  display: block;
+  width:100%;
+  margin:0;
+}
+
+.trulia-nav-left ul li,
+.trulia-nav-right ul li {
+  display: block;
+  }
+
+.trulia-nav-item,
+.trulia-nav-item:visited {
+  display:block;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  margin-left: 1rem;
+}
+
+/* There is a class on the UL's in the navigation called "trulia-nav-mobilehide".  Use it to show/hide the navigation */
+.trulia-nav-mobilehide {
+  height:0;
+  overflow:hidden;
+  width:0;
 }
