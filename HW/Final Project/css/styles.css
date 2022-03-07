@@ -1,0 +1,60 @@
+/* 
+Grey: #cfcfcf
+Blue: #45008a
+Purple: #806c94
+Orange: #eb9c00
+Black: #000000
+White: #ffffff
+*/
+
+/* Text styles */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+  font-size: 1em;
+}
+/* Body */
+body {
+    background-image: linear-gradient(to right, #2b2b2b, #878787);
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    height: 100vh;
+    margin: 100px 50px 0px 50px;
+  }
+
+  /* Main */
+  main {
+    padding-bottom: 50px;;
+  }
+
+/* Dropdown */
+.dropdown {
+    display: flex;
+    align-content: center;
+    background: white;
+    opacity: 80%;
+    padding: 15px 32px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+  /* Mood: Gym */
+    /* Background color is orange. Text color is white. */
+.gym {
+  background: #eb9c00;
+  color: white;
+}
+
+.gym-rec {}
+
+  /* Mood: Sleep */
+    /* Background color is dark blue. Text color is white. */
+
+  /* Mood: Heartache */
+    /* Background color is grey purple. Text color is white. */
