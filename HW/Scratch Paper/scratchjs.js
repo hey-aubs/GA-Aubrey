@@ -1,22 +1,31 @@
-/*Dropdown Menu*/
-$('.dropdown').click(function () {
-    $(this).attr('tabindex', 1).focus();
-    $(this).toggleClass('active');
-    $(this).find('.dropdown-menu').slideToggle(300);
-});
-$('.dropdown').focusout(function () {
-    $(this).removeClass('active');
-    $(this).find('.dropdown-menu').slideUp(300);
-});
-$('.dropdown .dropdown-menu li').click(function () {
-    $(this).parents('.dropdown').find('span').text($(this).text());
-    $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
-});
-/*End Dropdown Menu*/
+var moods = ["gym", "sleep", "heart"];
 
+document.addEventListener('DOMContentLoaded', function(event) {
 
-$('.dropdown-menu li').click(function () {
-var input = '<strong>' + $(this).parents('.dropdown').find('input').val() + '</strong>',
-  msg = '<span class="msg">Hidden input value: ';
-$('.msg').html(msg + input + '</span>');
-}); 
+  for(i=0;i<cities.length;i++) {
+    let newOption = document.createElement('option');
+    newOption.value =  cities[i];
+    newOption.innerText =  cities[i];
+    document.querySelector('#city-type').appendChild(newOption);
+  }
+
+  document.querySelector('#city-type').addEventListener('change', function(){
+    var city = document.querySelector('#city-type').value;
+    if(city == 'NYC') {
+      document.body.setAttribute('class','nyc');
+    }
+    else if (city == 'SF') {
+      document.body.setAttribute('class','sf');
+    }
+    else if (city == 'LA') {
+      document.body.setAttribute('class','la');
+    }
+    else if (city == 'ATX') {
+      document.body.setAttribute('class','austin');
+    }
+    else if (city == 'SYD') {
+      document.body.setAttribute('class','sydney');
+    }
+  });
+
+});

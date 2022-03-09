@@ -32,29 +32,59 @@ body {
     padding-bottom: 50px;;
   }
 
-/* Dropdown */
-.dropdown {
-    display: flex;
-    align-content: center;
-    background: white;
-    opacity: 80%;
-    padding: 15px 32px;
-    text-align: left;
-    border-radius: 5px;
-    cursor: pointer;    
+  .row {
+  display: flex;
+  align-items: center;
 }
 
-  /* Mood: Gym */
-    /* Background color is orange. Text color is white. */
-.gym {
-  background: #eb9c00;
+.col-lg-5,
+.col-lg-7 {
+  padding: 10px;
+}
+
+/* Dropdown */
+#mood-type {
+  display: flex;
+  opacity: 75%;
+  color: rgb(65, 65, 65);
+  font-size: 1em;
+  background: white;
+  border: 1px solid #111;
+  padding: 0px 15px;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 20px;
+}
+
+  /* When user selects mood "GYM": 
+  Page background should be orange. Text should be white.
+  Gym recommendation should be visible, while all others aren't. */
+.gym-off {
+  display: none;
+}
+.gym-on {
+  background-image: #eb9c00;
   color: white;
 }
+  /* When user selects mood "SLEEP": 
+  Page background should be blue. Text should be white.
+  Sleep recommendation should be visible, while all others aren't. */
+  .sleep-off {
+    background-image: #45008a;
+    color: white;
+    display: none;
+  }
 
-#gym-rec
-
-  /* Mood: Sleep */
-    /* Background color is dark blue. Text color is white. */
-
-  /* Mood: Heartache */
-    /* Background color is grey purple. Text color is white. */
+  /* When user selects mood "HEART": 
+  Page background should be purple. Text should be white.
+  Heartache recommendation should be visible, while all others aren't. */
+  .heart-off {
+    background-image: #806c94;
+    color: white;
+    display: none;
+  }
