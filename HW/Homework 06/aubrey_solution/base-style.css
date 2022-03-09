@@ -172,6 +172,71 @@ a {
     border: 2px solid black;
   }
 
+  @media screen and (max-width:1024px){
+    .trulia-nav {
+      height: auto;
+      display: block;
+    }
+    
+    .trulia-nav-toggle {
+      display:block;
+      color:white;
+      font-weight:bold;
+      font-size: 2rem;
+      margin-right:2rem;
+    }
+    
+    .trulia-nav ul li {
+      display:inline-block;
+      margin:0;
+    }
+    
+    
+    
+    .trulia-nav-logo {
+      height: 25px;
+      width: 78px;
+      padding-left:0;
+    }
+    
+    .trulia-nav-left,
+    .trulia-nav-right {
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+    }
+  
+    .trulia-nav-left ul,
+    .trulia-nav-right ul {
+      width:100%;
+      display: block;
+      margin:0;
+    }
+  
+    .trulia-nav-left ul li,
+    .trulia-nav-right ul li {
+      display: block;
+      }
+    
+    .trulia-nav-item,
+    .trulia-nav-item:visited {
+      display:block;
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom:1rem;
+      margin-left: 1rem;
+    }
+  
+    .trulia-nav-mobilehide {
+      height:0;
+      overflow:hidden;
+      width:0;
+    }
+  
+  }
+  
+  
+
 /* Breadcrumbs */
 
 .trulia-breadcrumb-area {
