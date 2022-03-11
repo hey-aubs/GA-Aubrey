@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Working Title</title>
   <meta name="description" content="Find a playlist to match your current mood.">
-
  
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Merriweather|Oswald" rel="stylesheet">
     <!-- Bootstrap CDN -->
@@ -14,52 +13,53 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Link Javascript file  -->
+    <!-- Link Javascript files  -->
     <script type="text/javascript" src="js/final.js"></script>
-
+    <script type="text/javascript" src="js/finaldata.js"></script>
 </head>
 
  <!-- ########## BODY ########## -->
+<body>
+<main class="row">
+    <div class="col-sm-7">
+    <h1>Today, I need something...</h1>
+    </div>
 
-<body class="container">
-    <main>
-         <section class="row">
-            <div class="col-lg-7">
-                <h1>Today, I need something...</h1>
-            </div>
-            <div class="col-lg-5">  
-                <form>
-                    <select id='mood-type'>
-                      <option id="default"> find your vibe:</option>
-                      <option id="gym">to get me pumped for the gym</option>
-                      <option id="sleep">to lull me to sleep</option>
-                      <option id="heart">to soothe a broken heart</option>
-                    </select>
-                </form>
-            </div>
-        </section>
-    </main>
+    <div class="col-sm-5">  
+        <form class="row">
+            <select id='moodType'>
+                <option value="default" selected>find your vibe:</option>
+                <option value="gym">to get me pumped for the gym</option>
+                <option value="sleep">to lull me to sleep</option>
+                <option value="heart">to soothe a broken heart</option>
+            </select>
+        </form>
+    </div>
+</main>
 
 <!-- ########## GYM ########## -->
-
-<div class="gym-on">
+<section id="gym">
     <h2>Okay, check this out:</h2>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0HRj9P7NxeE?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-</div>
+    <div class="playlist">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0HRj9P7NxeE?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+</section>
 
 <!-- ########## SLEEP ########## -->
-
-<div class="sleep-on">
+<section id="sleep">
     <h2>Okay, check this out:</h2>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYcDQ1hSjOpY?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-</div>
+    <div class="playlist">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYcDQ1hSjOpY?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+</section>
 
 <!-- ########## HEARTACHE ########## -->
-
-<div class="heart-on">
+<section id="heart">
     <h2>Okay, check this out:</h2>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSqBruwoIXkA?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-</div>
+    <div class="playlist">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSqBruwoIXkA?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+</section>
 
 </body>
 </html>

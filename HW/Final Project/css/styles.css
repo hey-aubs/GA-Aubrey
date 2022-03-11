@@ -29,7 +29,7 @@ body {
 
   /* Main */
   main {
-    padding-bottom: 50px;;
+    padding-bottom: 50px;
   }
 
   .row {
@@ -42,8 +42,12 @@ body {
   padding: 10px;
 }
 
+.playlist {
+  margin-top: 20px;
+}
+
 /* Dropdown */
-#mood-type {
+#moodType {
   display: flex;
   opacity: 75%;
   color: rgb(65, 65, 65);
@@ -58,33 +62,16 @@ body {
   height: 72px;
   line-height: 74px;
   vertical-align: middle;
+  align-items: center;
   box-shadow: #111 0 0 20px;
 }
 
-  /* When user selects mood "GYM": 
-  Page background should be orange. Text should be white.
-  Gym recommendation should be visible, while all others aren't. */
-.gym-off {
-  display: none;
+/* Mood: Gym */
+#gym,
+#sleep,
+#heart {
+  color: black;
+  padding: 10px;
 }
-.gym-on {
-  background-image: #eb9c00;
-  color: white;
-}
-  /* When user selects mood "SLEEP": 
-  Page background should be blue. Text should be white.
-  Sleep recommendation should be visible, while all others aren't. */
-  .sleep-off {
-    background-image: #45008a;
-    color: white;
-    display: none;
-  }
 
-  /* When user selects mood "HEART": 
-  Page background should be purple. Text should be white.
-  Heartache recommendation should be visible, while all others aren't. */
-  .heart-off {
-    background-image: #806c94;
-    color: white;
-    display: none;
-  }
+  

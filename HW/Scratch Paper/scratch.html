@@ -9,24 +9,34 @@
      <!-- Link CSS & JS files  -->
     <link rel="stylesheet" href="scratch-style.css">
     <script src="scratchjs.js"></script>
+	<script src="scratchjs2.js"></script>
 
 </head>
 
-	<body>
-		<header>
-			<div class="title">
-				<h1>CitiPix</h1>
-				<p>Your Cities, Your Pix</p>
-			</div>
-		</header>
-			<div class="container">
-				<form>
-					<select id="city-type">
-						<option>Select a City</option>
-					</select>
-				</form>
-			</div>
 
+<header class="petsHeader">
+    <h1>Pet Information & Finder</h1>
+</header>
+    <section class="petsOuterContainer">
 
-	</body>
-</html>
+        <form>
+            <label for="petType">Pet Type</label>
+            <select id="petType">
+                <option value="dog" selected>Dog</option>
+                <option value="guineapig">Guinea Pig</option>
+                <option value="horse">Horse</option>
+            </select>
+        </form>
+
+        <main class="petInfoMain">
+            <h1 class="petDisplayName"></h1>
+
+            <div class="petsData">
+
+                <dl class="petsDataSpecs">
+                </dl>
+            </div><!-- end petsData -->
+
+        </main>
+
+    </section>
