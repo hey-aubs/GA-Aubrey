@@ -6,7 +6,7 @@
 // Each new search should replace the previous search results
 // CSS Bonus: Use flex or grid properties to display the results in a responsive, clean layout
 
-const apiKey = "paste your key here";
+const apiKey = "E7cg8VLruvgYZiHBlfWYxCW51tFVItff";
 
 async function giphySearch(e) {
 
@@ -27,4 +27,4 @@ async function giphySearch(e) {
 }
 
 // dont forget your event listener
-
+document.querySelector("#search-form").addEventListener("submit", giphySearch);

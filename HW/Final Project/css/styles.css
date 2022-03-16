@@ -1,8 +1,5 @@
 /* 
 Grey: #cfcfcf
-Blue: #45008a
-Purple: #806c94
-Orange: #eb9c00
 Black: #000000
 White: #ffffff
 */
@@ -66,12 +63,26 @@ body {
   box-shadow: #111 0 0 20px;
 }
 
-/* Mood: Gym */
-#gym,
-#sleep,
-#heart {
-  color: black;
-  padding: 10px;
+/* Moods */
+#gym-rec,
+#sleep-rec,
+#heart-rec {
+  padding: 50px;
 }
+
+#gym-rec {
+  background-color: #eb9c00;
+  color: black;
+}
+
+#sleep-rec {
+  background-color: #00208a;
+}
+
+#heart-rec {
+  background-color: #806c94;
+  color: black;
+}
+
 
   
