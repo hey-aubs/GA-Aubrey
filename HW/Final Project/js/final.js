@@ -1,3 +1,5 @@
+// Define the different moods available for selection
+
 var moods = ["default", "gym", "sleep", "heart"];
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -9,30 +11,70 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.querySelector("#mood-selector").appendChild(newOption);
   });
 
-  for(i=0;i<moods.length;i++) {
-  }
-
+  // Each time a change is made to the selector, serve up corresponding information
   document.querySelector("#mood-selector").addEventListener('change', function(){
     var mood = document.querySelector("#mood-selector").value;
-    
-  // Set play-block's H2
+    console.log(mood)
+
+  // DEFAULT
    if (mood == "default")    {
-    document.querySelector("#play-block").style.    display="none";
+    // Hide play-block content
+    document.querySelector("#play-block").style.  display="none";
+    document.body.style.color="white";
     document.querySelector("#play-block .playlist").setAttribute("src","");
   }
-  else {
+  // SLEEP
+  else if (mood==="sleep") {
+    // Replace background image with color
+    document.body.style.backgroundImage="url('')"
+    document.body.style.backgroundColor="#00208a"
+    document.body.style.color="white"
+    console.log(moodData[mood])
+    console.log(document.body.style.backgroundColor)
+    // Set h2
     document.querySelector("#play-block h2").innerText = moodData[mood].about;
+    console.log(moodData[mood].about)
+    // Set iframe source
+    document.querySelector("#play-block .playlist").setAttribute("src",moodData[mood].playlist);
+    console.log(moodData[mood])
+    // Show play-block content 
+    document.querySelector("#play-block").style.display="block";
+  }
 
-  // Set the iframe's source
-   document.querySelector("#play-block .playlist").setAttribute("src",moodData[mood].playlist);
- 
-  // Set play-block's theme class
-    document.querySelector("#play-block").setAttribute("class",moodData[mood].theme);
+  // GYM
+  else if (mood==="gym") {
+  // Replace background image with color
+  document.body.style.backgroundImage="url('')"
+  document.body.style.backgroundColor="#eb9c00"
+  document.body.style.color="black"
+  console.log(moodData[mood])
+  console.log(document.body.style.backgroundColor)
+  // Set h2
+  document.querySelector("#play-block h2").innerText = moodData[mood].about;
+  console.log(moodData[mood].about)
+  // Set iframe source
+  document.querySelector("#play-block .playlist").setAttribute("src",moodData[mood].playlist);
+  console.log(moodData[mood])
+  // Show play-block content 
+  document.querySelector("#play-block").style.display="block";
+  }
 
-  // Show the play-block
-   document.querySelector("#play-block").style.display="block";
-} 
-
-
+  // HEART
+  else if (mood==="heart") {
+ // Replace background image with color 
+  document.body.style.backgroundImage="url('')"
+  document.body.style.backgroundColor="#806c94"
+  document.body.style.color="white"
+  console.log(moodData[mood])
+  console.log(document.body.style.backgroundColor)
+  // Set h2
+  document.querySelector("#play-block h2").innerText = moodData[mood].about;
+  console.log(moodData[mood].about)
+  // Set iframe source
+  document.querySelector("#play-block .playlist").setAttribute("src",moodData[mood].playlist);
+  console.log(moodData[mood])
+  // Show play-block content 
+  document.querySelector("#play-block").style.display="block";
+  }
 });
 })

@@ -34,6 +34,7 @@ h2 {
   padding: 10px;
 }
 
+/* Responsive Behavior */
   @media only screen and (max-width: 1400px){
   .col-lg-6 {
     width: 100%;
@@ -43,14 +44,11 @@ h2 {
     text-align: center;
   }
 }
-.playlist {
-  margin-top: 20px;
-  width: 100%;
-}
 
 /* Dropdown */
   #mood-selector {
     opacity: 75%;
+    position: relative;
     color: rgb(65, 65, 65);
     font-size: 1em;
     background: white;
@@ -73,12 +71,12 @@ h2 {
     cursor: pointer;
     }
 
-/* Themes */
-.gym-rec,
-.sleep-rec,
-.heart-rec {
-  animation: fadein 3s;
-}
+/* Recommendation Section */
+  #play-block {
+   display: none;
+   padding-top: 20px;
+   animation: fadein 3s;
+  }
    @keyframes   fadein {
     from {
       opacity:0;
@@ -88,21 +86,7 @@ h2 {
       }
   }
 
-/* Issue: background color not changing for full page */
-
-.gym-rec {
-  background-color: #eb9c00;
-}
-
-.sleep-rec {
-  background-color: #00208a;
-}
-
-.heart-rec {
-  background-color: #806c94;
-}
-
-#play-block {
-  display: none;
-  padding-top: 20px;
-}
+.playlist {
+  margin-top: 20px;
+  width: 100%;
+  }
