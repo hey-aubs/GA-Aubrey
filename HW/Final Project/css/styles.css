@@ -1,9 +1,3 @@
-/* 
-Grey: #cfcfcf
-Black: #000000
-White: #ffffff
-*/
-
 /* Text styles */
 h1 {
     font-size: 2em;
@@ -13,18 +7,18 @@ h2 {
   font-size: 1em;
 }
 /* Body */
-body {
+  body {
     background-image: linear-gradient(to right, #2b2b2b, #878787);
     flex-direction: column;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 28px;
     color: white;
     display: flex;
     height: 100vh;
-    margin: 100px 50px 0px 50px;
+    padding: 100px 50px 0px 50px;
   }
 
-  /* Main */
+/* Main */
   main {
     padding-bottom: 50px;
   }
@@ -34,55 +28,81 @@ body {
   align-items: center;
 }
 
-.col-lg-5,
-.col-lg-7 {
+.col-lg-6 {
+  display: flex;
+  justify-content: center;
   padding: 10px;
 }
 
+  @media only screen and (max-width: 1400px){
+  .col-lg-6 {
+    width: 100%;
+  }
+  h2,
+  h1 {
+    text-align: center;
+  }
+}
 .playlist {
   margin-top: 20px;
+  width: 100%;
 }
 
 /* Dropdown */
-#moodType {
-  display: flex;
-  opacity: 75%;
-  color: rgb(65, 65, 65);
-  font-size: 1em;
-  background: white;
-  border: 1px solid #111;
-  padding: 0px 15px;
-  text-align: left;
-  width: 100%;
-  border-radius: 5px;
-  font-family: helvetica, arial, sans-serif;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-  align-items: center;
-  box-shadow: #111 0 0 20px;
-}
+  #mood-selector {
+    opacity: 75%;
+    color: rgb(65, 65, 65);
+    font-size: 1em;
+    background: white;
+    border: 1px solid #111;
+    padding: 0px 15px;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    font-family: helvetica, arial, sans-serif;
+    height: 72px;
+    line-height: 74px;
+    vertical-align: middle;
+    align-items: center;
+    box-shadow: #111 0 0 20px;
+  }
 
-/* Moods */
-#gym-rec,
-#sleep-rec,
-#heart-rec {
-  padding: 50px;
-}
+    #mood-selector:hover {
+    opacity: 90%;
+    color: rgb(223, 7, 198);
+    cursor: pointer;
+    }
 
-#gym-rec {
+/* Themes */
+.gym-rec,
+.sleep-rec,
+.heart-rec {
+  animation: fadein 3s;
+}
+   @keyframes   fadein {
+    from {
+      opacity:0;
+      }
+   to {
+      opacity:1;
+      }
+  }
+
+/* Issue: background color not changing for full page */
+
+.gym-rec {
   background-color: #eb9c00;
-  color: black;
 }
 
-#sleep-rec {
+.sleep-rec {
   background-color: #00208a;
 }
 
-#heart-rec {
+.heart-rec {
   background-color: #806c94;
-  color: black;
 }
 
-
-  
+#play-block {
+  display: none;
+  padding-top: 20px;
+}

@@ -1,61 +1,38 @@
 var moods = ["default", "gym", "sleep", "heart"];
 
 document.addEventListener('DOMContentLoaded', function(event) {
+  Object.entries(moodData).forEach((entry) => {
+    const [key, value] = entry;
+    let newOption = document.createElement('option');
+    newOption.value =  key;
+    newOption.innerText =  value.option;
+    document.querySelector("#mood-selector").appendChild(newOption);
+  });
 
   for(i=0;i<moods.length;i++) {
-    let newOption = document.createElement('option');
-    newOption.value =  moods[i];
-    newOption.innerText =  moods[i];
-    document.querySelector("moodType").appendChild(newOption);
   }
 
-  document.querySelector("moodType").addEventListener('change', function(){
-    var city = document.querySelector("moodType").value;
-    if(moods == "default") {
-      document.body.setAttribute('id','default');
-    }
-    else if (moods == "gym") {
-      document.body.setAttribute('id','gym-rec');
-    }
-    else if (moods == "sleep") {
-      document.body.setAttribute('id','sleep-rec');
-    }
-    else if (moods == "heart") {
-      document.body.setAttribute('id','heart-rec');
-    }
-  });
-})
-
-  // If selector = "find your vibe:"
-    //Hide sections gym, sleep, and heart
+  document.querySelector("#mood-selector").addEventListener('change', function(){
+    var mood = document.querySelector("#mood-selector").value;
     
-  // If selector = "to get me pumped for the gym"
-      //Hide sections sleep and heart. Show section "gym"
+  // Set play-block's H2
+   if (mood == "default")    {
+    document.querySelector("#play-block").style.    display="none";
+    document.querySelector("#play-block .playlist").setAttribute("src","");
+  }
+  else {
+    document.querySelector("#play-block h2").innerText = moodData[mood].about;
 
-      // Then change page background color to orange
+  // Set the iframe's source
+   document.querySelector("#play-block .playlist").setAttribute("src",moodData[mood].playlist);
+ 
+  // Set play-block's theme class
+    document.querySelector("#play-block").setAttribute("class",moodData[mood].theme);
 
-      // And change text color to black
+  // Show the play-block
+   document.querySelector("#play-block").style.display="block";
+} 
 
-      // And show about text
 
-      // And show playlist
-
-  // If selector = "to lull me to sleep"
-      //Hide sections gym and heart. Show section "sleep"
-
-      // Then change page background color to blue
-
-      // And show about text
-
-      // And show playlist
-
-  // If selector = "to soothe a broken heart"
-      //Hide sections gym and heart. Show section "sleep"
-
-      // Then change page background color to purple
-
-      // And change text color to black
-
-      // And show about text
-
-      // And show playlist
+});
+})
