@@ -16,13 +16,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
     var mood = document.querySelector("#mood-selector").value;
     console.log(mood)
 
-  // DEFAULT
+  // DEFAULT VIEW
    if (mood == "default")    {
     // Hide play-block content
-    document.querySelector("#play-block").style.  display="none";
+    document.querySelector("#play-block").style.  display="none";  
     document.body.style.color="white";
     document.querySelector("#play-block .playlist").setAttribute("src","");
   }
+
   // SLEEP
   else if (mood==="sleep") {
     // Replace background image with color

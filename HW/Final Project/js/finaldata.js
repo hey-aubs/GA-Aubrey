@@ -14,7 +14,7 @@ var moodData = {
   },
 
   "heart":{
-    "about": "grab a pint and cry along to these songs:",
+    "about": "grab a box of tissues and cry along to these songs:",
     "playlist": "https://open.spotify.com/embed/playlist/37i9dQZF1DWSqBruwoIXkA?utm_source=generator",
     "option": "to soothe a broken heart",
   }

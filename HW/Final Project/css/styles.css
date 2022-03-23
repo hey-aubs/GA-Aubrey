@@ -6,6 +6,20 @@ h1 {
 h2 {
   font-size: 1em;
 }
+
+p,
+a {
+  font-size: 12px;
+  color:white;
+  text-decoration: none;
+}
+
+    a:hover {
+      color:white;
+      opacity: 100%;
+      text-decoration: underline;
+    }
+
 /* Body */
   body {
     background-image: linear-gradient(to right, #2b2b2b, #878787);
@@ -14,79 +28,90 @@ h2 {
     font-size: 28px;
     color: white;
     display: flex;
-    height: 100vh;
     padding: 100px 50px 0px 50px;
   }
 
 /* Main */
-  main {
-    padding-bottom: 50px;
-  }
-
   .row {
   display: flex;
   align-items: center;
+  animation: fadein 3s;
 }
 
 .col-lg-6 {
   display: flex;
   justify-content: center;
+  padding: 0px 0px 30px 0px;
+}
+
+/* Dropdown */
+#mood-selector {
+  opacity: 75%;
+  position: relative;
+  color: rgb(65, 65, 65);
+  font-size: 1em;
+  background: white;
+  border: 1px solid #111;
+  padding: 0px 15px;
+  text-align: left;
+  width: 100%;
+  border-radius: 5px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  align-items: center;
+  box-shadow: #111 0 0 10px;
+}
+
+  #mood-selector:hover {
+    opacity: 90%;
+    color: rgb(223, 7, 198);
+    cursor: pointer;
+  }
+
+/* Recommendation Section */
+#play-block {
+  display: flex;
+  text-align: center;
+  padding: 0px;
+  animation: fadein 3s;
+}
+
+    @keyframes   fadein {
+     from {
+       opacity:0;
+       }
+    to {
+       opacity:1;
+       }
+    }
+ 
+    
+.playlist {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
   padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 30%;
+  text-align: center;
 }
 
 /* Responsive Behavior */
   @media only screen and (max-width: 1400px){
   .col-lg-6 {
     width: 100%;
-  }
-  h2,
-  h1 {
+    justify-content: center;
     text-align: center;
   }
+
 }
 
-/* Dropdown */
-  #mood-selector {
-    opacity: 75%;
-    position: relative;
-    color: rgb(65, 65, 65);
-    font-size: 1em;
-    background: white;
-    border: 1px solid #111;
-    padding: 0px 15px;
-    text-align: left;
-    width: 100%;
-    border-radius: 5px;
-    font-family: helvetica, arial, sans-serif;
-    height: 72px;
-    line-height: 74px;
-    vertical-align: middle;
-    align-items: center;
-    box-shadow: #111 0 0 20px;
-  }
-
-    #mood-selector:hover {
-    opacity: 90%;
-    color: rgb(223, 7, 198);
-    cursor: pointer;
-    }
-
-/* Recommendation Section */
-  #play-block {
-   display: none;
-   padding-top: 20px;
-   animation: fadein 3s;
-  }
-   @keyframes   fadein {
-    from {
-      opacity:0;
-      }
-   to {
-      opacity:1;
-      }
-  }
-
-.playlist {
-  margin-top: 20px;
-  width: 100%;
-  }
